@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Sort
 {
@@ -6,7 +7,21 @@ namespace Sort
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int[] array = new int[8] { 10, 11, 9, 8, 2, 3, 1, -1 };
+
+            new Bubble.Bubble().Sort(array);
+
+            Print(array);
+
+            Console.Read();
+        }
+
+        static void Print(int[] arr)
+        {
+            if (arr == null)
+            { return; }
+
+            Array.ForEach(arr, x => { Console.WriteLine($"{x},"); });
         }
     }
 }
