@@ -5,6 +5,7 @@ namespace Sort
 {
     class Program
     {
+        //https://www.cnblogs.com/onepixel/articles/7674659.html
         static void Main(string[] args)
         {
             int[] array = new int[8] { 10, 11, 9, 8, 2, 3, 1, -1 };
